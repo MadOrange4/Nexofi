@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexofi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="logo">
+        <span style="font-size:2.1rem; font-weight:800; letter-spacing:-0.03em; display:flex; align-items:center; line-height:1; color:#1a1a2e;">
+          Ne
+          <span style="background:linear-gradient(135deg, #6366f1, #a78bfa, #c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; color:unset;">x</span>
+          ofi
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#office">Virtual Office</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#waitlist" class="btn btn-ghost">Log In</a>
+        <a href="#waitlist" class="btn btn-primary">Get Early Access</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#office">Virtual Office</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#waitlist" class="btn btn-primary" style="margin-top:1rem;display:inline-block;">Get Early Access</a></li>
+    </ul>
+  </div>
+
+  <main class="snap-container">
+
+  <!-- ===================== HERO ===================== -->
+  <header id="hero" class="snap-section">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge glass-pill">
+        <span class="badge-dot"></span>
+        Project Workflow-Management Reimagined
+      </div>
+      <h1>Your Entire Team.<br/><span class="gradient-text">One Virtual Office.</span></h1>
+      <p class="hero-sub">
+        Nexofi turns remote chaos into visual clarity. Plan projects with AI-generated blueprints,
+        manage hybrid teams in a beautiful 2D office space, and track performance all in real time.
+      </p>
+      <div class="hero-cta">
+        <a href="#waitlist" class="btn btn-primary btn-lg">Join the Waitlist</a>
+        <a href="#how-it-works" class="btn btn-glass btn-lg">
+          <svg width="20" height="20" fill="none" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 7l4 3-4 3V7z" fill="currentColor"/></svg>
+          See How It Works
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card hero-preview">
+          <!-- 2D Office Preview Illustration -->
+          <div class="office-preview">
+            <div class="office-grid">
+              <!-- Open desk now top left -->
+              <div class="desk empty" style="grid-column:1;grid-row:1;">
+                <span class="desk-name desk-name--empty">Open</span>
+                <svg class="desk-figure desk-figure--empty" viewBox="0 0 24 34" fill="none"><circle cx="12" cy="5" r="4" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 3"/><rect x="6" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 3"/></svg>
+              </div>
+              <div class="desk occupied" style="grid-column:2;grid-row:1;">
+                <div class="avatar" style="background:#f59e0b; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">MK</div>
+                <span class="desk-name">Mike K.</span>
+                <svg class="desk-figure" viewBox="0 0 24 34" fill="none"><circle cx="12" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/><rect x="6" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <div class="status-dot online"></div>
+              </div>
+              <div class="desk break" style="grid-column:3;grid-row:1;">
+                <div class="avatar" style="background:#10b981; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">JS</div>
+                <span class="desk-name">James S.</span>
+                <!-- Stickman with coffee mug (side, not shrinking main figure) -->
+                <svg class="desk-figure" viewBox="0 0 34 34" fill="none">
+                  <!-- Main figure, always centered -->
+                  <circle cx="17" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/>
+                  <rect x="11" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/>
+                  <!-- Coffee mug, overlayed to the right, not shifting main figure -->
+                  <g>
+                    <rect x="25" y="15" width="7" height="8" rx="3.5" stroke="currentColor" stroke-width="1.2"/>
+                    <rect x="31.5" y="18" width="1.5" height="3" rx="0.7" stroke="currentColor" stroke-width="0.8"/>
+                    <!-- Larger, wavier steam lines -->
+                    <path d="M27.5 14 Q28.5 12.5 27.5 11 Q26.5 9.5 27.5 8" stroke="currentColor" stroke-width="1.1" fill="none"/>
+                    <path d="M30.5 14 Q31.5 12.5 30.5 11 Q29.5 9.5 30.5 8" stroke="currentColor" stroke-width="1.1" fill="none"/>
+                  </g>
+                </svg>
+                <div class="status-dot away"></div>
+              </div>
+              <div class="desk occupied" style="grid-column:4;grid-row:1;">
+                <div class="avatar" style="background:#6366f1; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">SK</div>
+                <span class="desk-name">Sarah K.</span>
+                <svg class="desk-figure" viewBox="0 0 34 34" fill="none">
+                  <circle cx="17" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/>
+                  <rect x="11" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/>
+                  <!-- Beach umbrella, half circle top, stick starts at bottom -->
+                  <g>
+                    <path d="M22 12 A6 6 0 0 1 34 12" stroke="currentColor" stroke-width="1.4" fill="none"/>
+                    <line x1="22" y1="12" x2="34" y2="12" stroke="currentColor" stroke-width="1.4"/>
+                    <line x1="28" y1="12" x2="28" y2="27" stroke="currentColor" stroke-width="1.1"/>
+                  </g>
+                </svg>
+                <div class="status-dot online"></div>
+                <!-- Speech bubble on right -->
+                <div class="desk-popup desk-popup--right">
+                  <strong>Sarah K.</strong><br/>
+                  <span class="tooltip-label">Working on</span> Auth Module<br/>
+                  <span class="efficiency">⚡ 94% efficiency</span>
+                </div>
+              </div>
+              <div class="desk occupied" style="grid-column:1;grid-row:2;">
+                <div class="avatar" style="background:#ec4899; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">AD</div>
+                <span class="desk-name">Ana D.</span>
+                <svg class="desk-figure" viewBox="0 0 24 34" fill="none"><circle cx="12" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/><rect x="6" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <div class="status-dot online"></div>
+                <!-- Speech bubble -->
+                <div class="desk-popup desk-popup--left">
+                  <strong>AI Suggestion</strong><br/>
+                  <span class="tooltip-label">Reassign</span> API task → James<br/>
+                  <span class="efficiency">⚙ Skill match 97%</span>
+                </div>
+              </div>
+              <div class="desk occupied" style="grid-column:2;grid-row:2;">
+                <div class="avatar" style="background:#8b5cf6; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">RP</div>
+                <span class="desk-name">Raj P.</span>
+                <svg class="desk-figure" viewBox="0 0 24 34" fill="none"><circle cx="12" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/><rect x="6" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <div class="status-dot online"></div>
+              </div>
+              <div class="desk off" style="grid-column:3;grid-row:2;">
+                <div class="avatar" style="background:#94a3b8;opacity:0.4; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">PS</div>
+                <span class="desk-name">Priya S.</span>
+                <svg class="desk-figure" viewBox="0 0 34 34" fill="none">
+                  <circle cx="17" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/>
+                  <rect x="11" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/>
+                  <!-- Beach umbrella, half circle top, stick starts at bottom -->
+                  <g>
+                    <path d="M22 12 A6 6 0 0 1 34 12" stroke="currentColor" stroke-width="1.4" fill="none"/>
+                    <line x1="22" y1="12" x2="34" y2="12" stroke="currentColor" stroke-width="1.4"/>
+                    <line x1="28" y1="12" x2="28" y2="27" stroke="currentColor" stroke-width="1.1"/>
+                  </g>
+                </svg>
+                <div class="status-dot offline"></div>
+              </div>
+              <div class="desk occupied" style="grid-column:4;grid-row:2;">
+                <div class="avatar" style="background:#f43f5e; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1rem; letter-spacing:0.02em;">LM</div>
+                <span class="desk-name">Lisa M.</span>
+                <svg class="desk-figure" viewBox="0 0 24 34" fill="none"><circle cx="12" cy="5" r="4" stroke="currentColor" stroke-width="1.4"/><rect x="6" y="12" width="12" height="13" rx="5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <div class="status-dot online"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== LOGOS ===================== -->
+  <section class="logos-section">
+    <div class="container">
+      <p class="logos-label">Designed for teams that build the future</p>
+      <div class="logos-row">
+        <span class="logo-placeholder">TechCorp</span>
+        <span class="logo-placeholder">CloudBase</span>
+        <span class="logo-placeholder">DevSync</span>
+        <span class="logo-placeholder">QuantumLab</span>
+        <span class="logo-placeholder">StackFlow</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section id="features" class="section snap-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag glass-pill"><span class="badge-dot"></span>Core Features</span>
+        <h2>Everything you need to<br/><span class="gradient-text">run projects smarter</span></h2>
+      </div>
+
+      <!-- Hero feature — full-width split layout -->
+      <div class="feature-hero glass-card">
+        <div class="feature-hero-text">
+          <svg class="feature-icon" width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>AI Project Blueprints</h3>
+          <p>Describe your project idea and our AI generates a complete blueprint, tasks, milestones, and dependencies in seconds.</p>
+        </div>
+        <div class="feature-hero-visual">
+          <div class="blueprint-demo glass-inner">
+            <div class="bp-row"><span class="bp-check done">✓</span><span>Setup authentication service</span><span class="bp-tag">Backend</span></div>
+            <div class="bp-row"><span class="bp-check done">✓</span><span>Design database schema</span><span class="bp-tag">Database</span></div>
+            <div class="bp-row highlight"><span class="bp-check ai">AI</span><span>Implement rate limiting</span><span class="bp-tag new">Suggested</span></div>
+            <div class="bp-row highlight"><span class="bp-check ai">AI</span><span>Add WebSocket handlers</span><span class="bp-tag new">Suggested</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact feature pills row -->
+      <div class="features-row">
+        <div class="feature-pill glass-card">
+          <svg class="feature-icon" width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Skill Matching</strong><span>AI finds the right person for every task</span></div>
+        </div>
+        <div class="feature-pill glass-card">
+          <svg class="feature-icon" width="20" height="20" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div><strong>Virtual Office</strong><span>See your whole team in a 2D workspace</span></div>
+        </div>
+        <div class="feature-pill glass-card">
+          <svg class="feature-icon" width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Efficiency Scoring</strong><span>AI-powered daily performance insights</span></div>
+        </div>
+        <div class="feature-pill glass-card">
+          <svg class="feature-icon" width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Time Tracking</strong><span>Automatic work sessions & break logging</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how-it-works" class="section section-alt snap-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag glass-pill"><span class="badge-dot"></span>How It Works</span>
+        <h2>From idea to execution<br/><span class="gradient-text">in four simple steps</span></h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card glass-card">
+          <div class="step-number">01</div>
+          <h3>Describe Your Project</h3>
+          <p>Enter your project idea with key details. Our AI analyzes the scope, tech stack, and requirements to understand the full picture.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12 20h16m0 0l-6-6m6 6l-6 6" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step-card glass-card">
+          <div class="step-number">02</div>
+          <h3>AI Generates Blueprint</h3>
+          <p>Get an intelligent task breakdown with priorities, time estimates, and skill requirements. Review, customize, and approve the plan.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12 20h16m0 0l-6-6m6 6l-6 6" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step-card glass-card">
+          <div class="step-number">03</div>
+          <h3>Team Checks In</h3>
+          <p>Employees open Nexofi and clock in with one tap. Their avatar appears at a virtual desk, ready to work with assigned tasks waiting.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12 20h16m0 0l-6-6m6 6l-6 6" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="step-card glass-card">
+          <div class="step-number">04</div>
+          <h3>Manage &amp; Optimize</h3>
+          <p>Watch your team in real time. AI handles reassignment, flag bottlenecks, and delivers daily efficiency reports to managers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VIRTUAL OFFICE SHOWCASE ===================== -->
+  <section id="office" class="section snap-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag glass-pill"><span class="badge-dot"></span>Virtual Office</span>
+        <h2>Your team, visualized<br/><span class="gradient-text">like never before</span></h2>
+        <p>A beautiful 2D workplace where remote feels like in-person. Every employee, every desk, every status at a glance.</p>
+      </div>
+
+      <div class="glass-card office-showcase">
+        <div class="office-showcase-grid">
+          <!-- Row 1: Meeting room + Desks -->
+          <div class="os-zone meeting-room">
+            <div class="zone-label">🎯 Sprint Planning</div>
+            <div class="os-avatars">
+              <div class="os-person"><div class="os-avatar" style="background:#6366f1;">S</div><span>Sarah</span></div>
+              <div class="os-person"><div class="os-avatar" style="background:#f59e0b;">M</div><span>Mike</span></div>
+              <div class="os-person"><div class="os-avatar" style="background:#10b981;">J</div><span>James</span></div>
+            </div>
+          </div>
+          <div class="os-zone work-area">
+            <div class="zone-label">💻 Development Zone</div>
+            <div class="os-desks">
+              <div class="os-desk active">
+                <div class="os-avatar small" style="background:#ec4899;">A</div>
+                <div class="os-desk-info">
+                  <span class="name">Ana</span>
+                  <span class="task">Frontend refactor</span>
+                </div>
+                <div class="os-status-badge working">Working</div>
+              </div>
+              <div class="os-desk active">
+                <div class="os-avatar small" style="background:#8b5cf6;">R</div>
+                <div class="os-desk-info">
+                  <span class="name">Raj</span>
+                  <span class="task">API endpoints</span>
+                </div>
+                <div class="os-status-badge working">Working</div>
+              </div>
+              <div class="os-desk break-desk">
+                <div class="os-avatar small" style="background:#f43f5e;">L</div>
+                <div class="os-desk-info">
+                  <span class="name">Lisa</span>
+                  <span class="task">Coffee break ☕</span>
+                </div>
+                <div class="os-status-badge on-break">Break</div>
+              </div>
+              <div class="os-desk empty-desk">
+                <div class="os-desk-info">
+                  <span class="name">Open Desk</span>
+                  <span class="task"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Row 2: Break room + Status -->
+          <div class="os-zone break-room">
+            <div class="zone-label">☕ Break Room</div>
+            <div class="os-avatars">
+              <div class="os-person"><div class="os-avatar" style="background:#f43f5e;">L</div><span>Lisa</span></div>
+            </div>
+          </div>
+          <div class="os-zone status-panel">
+            <div class="zone-label">📊 Live Status</div>
+            <div class="status-rows">
+              <div class="status-row"><span class="status-indicator online"></span>5 online</div>
+              <div class="status-row"><span class="status-indicator away"></span>1 on break</div>
+              <div class="status-row"><span class="status-indicator offline"></span>2 offline</div>
+              <div class="status-row"><span class="status-indicator meeting"></span>3 in meeting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANALYTICS ===================== -->
+  <section id="analytics" class="section section-alt snap-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag glass-pill"><span class="badge-dot"></span>Analytics &amp; Insights</span>
+        <h2>Data-driven decisions,<br/><span class="gradient-text">effortlessly</span></h2>
+        <p>Every minute of work produces insight. Nexofi transforms raw activity data into clear, actionable analytics.</p>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="glass-card analytics-card">
+          <div class="analytics-header">
+            <h4>Team Efficiency</h4>
+            <span class="analytics-badge up">↑ 12%</span>
+          </div>
+          <div class="analytics-chart bar-chart">
+            <div class="bar-group">
+              <div class="bar" style="height:70%;" data-label="Mon"></div>
+              <div class="bar" style="height:85%;" data-label="Tue"></div>
+              <div class="bar" style="height:60%;" data-label="Wed"></div>
+              <div class="bar" style="height:90%;" data-label="Thu"></div>
+              <div class="bar accent" style="height:95%;" data-label="Fri"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card analytics-card">
+          <div class="analytics-header">
+            <h4>Top Performers</h4>
+            <span class="analytics-badge">This week</span>
+          </div>
+          <div class="leaderboard">
+            <div class="lb-row">
+              <span class="lb-rank gold">1</span>
+              <div class="os-avatar small" style="background:#6366f1;">S</div>
+              <span class="lb-name">Sarah K.</span>
+              <span class="lb-score">97.2</span>
+            </div>
+            <div class="lb-row">
+              <span class="lb-rank silver">2</span>
+              <div class="os-avatar small" style="background:#8b5cf6;">R</div>
+              <span class="lb-name">Raj P.</span>
+              <span class="lb-score">94.8</span>
+            </div>
+            <div class="lb-row">
+              <span class="lb-rank bronze">3</span>
+              <div class="os-avatar small" style="background:#ec4899;">A</div>
+              <span class="lb-name">Ana M.</span>
+              <span class="lb-score">91.5</span>
+            </div>
+            <div class="lb-row">
+              <span class="lb-rank">4</span>
+              <div class="os-avatar small" style="background:#f59e0b;">M</div>
+              <span class="lb-name">Mike T.</span>
+              <span class="lb-score">89.1</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card analytics-card">
+          <div class="analytics-header">
+            <h4>Daily Breakdown</h4>
+            <span class="analytics-badge">Today</span>
+          </div>
+          <div class="daily-stats">
+            <div class="daily-stat">
+              <div class="daily-ring" style="--progress:78; --color:#6366f1;">
+                <svg viewBox="0 0 36 36">
+                  <path d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                  <path d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke="var(--color)" stroke-width="3" stroke-dasharray="78, 100" stroke-linecap="round"/>
+                </svg>
+                <span>78%</span>
+              </div>
+              <p>Focus Time</p>
+            </div>
+            <div class="daily-stat">
+              <div class="daily-ring" style="--progress:92; --color:#10b981;">
+                <svg viewBox="0 0 36 36">
+                  <path d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                  <path d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke="var(--color)" stroke-width="3" stroke-dasharray="92, 100" stroke-linecap="round"/>
+                </svg>
+                <span>92%</span>
+              </div>
+              <p>Tasks Done</p>
+            </div>
+            <div class="daily-stat">
+              <div class="daily-ring" style="--progress:15; --color:#f59e0b;">
+                <svg viewBox="0 0 36 36">
+                  <path d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                  <path d="M18 2.0845a15.9155 15.9155 0 010 31.831 15.9155 15.9155 0 010-31.831" fill="none" stroke="var(--color)" stroke-width="3" stroke-dasharray="15, 100" stroke-linecap="round"/>
+                </svg>
+                <span>15%</span>
+              </div>
+              <p>Break Time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA + FOOTER (shared snap) ===================== -->
+  <div class="snap-section snap-section-end">
+
+  <!-- ===================== CTA / WAITLIST ===================== -->
+  <section id="waitlist" class="section cta-section">
+    <div class="container">
+      <div class="glass-card cta-card">
+        <div class="cta-bg">
+          <div class="orb orb-cta-1"></div>
+          <div class="orb orb-cta-2"></div>
+        </div>
+        <div class="cta-content">
+          <h2>Ready to reimagine<br/><span class="gradient-text">how your team works?</span></h2>
+          <p>Join the waitlist and be among the first to experience Nexofi when we launch.</p>
+          <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+            <div class="input-group glass-input">
+              <input type="email" placeholder="Enter your work email" required />
+              <button type="submit" class="btn btn-primary">Get Early Access</button>
+            </div>
+          </form>
+          <p class="cta-note">Free during beta · No credit card required · Cancel anytime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad2)" />
+            <path d="M10 22V14l6-4 6 4v8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 22v-5h4v5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32">
+                <stop stop-color="#6366f1"/>
+                <stop offset="1" stop-color="#a78bfa"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <!-- The above span replaces the logo and text -->
+        </a>
+        <p>AI-powered project management<br/>for the modern hybrid team.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#">Pricing</a>
+          <a href="#">Roadmap</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Nexofi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  </div><!-- end snap-section-end -->
+
+  </main>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast">
+    <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>You're on the list! We'll be in touch soon.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
